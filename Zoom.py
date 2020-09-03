@@ -6,7 +6,7 @@ print("Hey there! I am your Zoom Assistant!\n")
 time.sleep(1)
 print("I will give you alerts for your upcoming Zoom meetings.")
 print("I will also help you to find your meetings ID and password.\n\n")
-time.sleep(3)
+time.sleep(2)
 
 
 def time_diff(a,b):
@@ -57,7 +57,7 @@ def search(timestr):
 
 while True:
 	print("Searching for Zoom Meetings....\n")
-	time.sleep(3)
+	time.sleep(1.5)
 	timestr = (datetime.now().strftime("%a,%H:%M")).split(",")
 	query = search(timestr)
 
@@ -91,7 +91,7 @@ while True:
 			break
 
 		else:
-			print("Sleeping from 5 minutes")
+			print("\nSleeping from 5 minutes")
 			time.sleep(60*5)
 
 
