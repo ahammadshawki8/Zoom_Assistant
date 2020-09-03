@@ -66,8 +66,8 @@ while True:
 
 	for line in query:
 		print("Meeting Alert!")
-		if line[-1] < 0:
-			print("Meeting will start in",-(line[-1]),"minutes")
+		if line[-1] > 0:
+			print("Meeting will start in",line[-1],"minutes")
 		else:
 			print("Meeting started",line[-1],"minutes ago")
 		print()
