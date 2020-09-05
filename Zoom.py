@@ -1,6 +1,7 @@
 import time
 import csv
 from datetime import datetime
+import webbrowser as we
 
 print("Hey there! I am your Zoom Assistant!\n")
 time.sleep(1)
@@ -57,8 +58,14 @@ while True:
 		print("Meeting ID   : ",line[1])
 		print("Meeting Pass : ",line[2])
 		print("Meeting Link : ",link)
+		open_web = input("\nDo you want to open the meeting link? (yes/no) ->").split().lower()
+		if open_web == "yes":
+                        print("\nOpening meeting link")
+                        time.sleep(1)
+                        we.open(link)
+                else:
+                        print("\nCopy and Paste Meeting ID and Password.")
 		
-		print("\nFollow the Meeting Link or Copy and Paste Meeting ID and Password.")
 		time.sleep(2)
 	else:
 		close = input("\n\nDo you want to close the program?\na. close\nb. Don't close\n(a/b) -> ").lower()
