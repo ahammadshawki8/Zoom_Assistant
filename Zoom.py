@@ -6,39 +6,19 @@ print("Hey there! I am your Zoom Assistant!\n")
 time.sleep(1)
 print("I will give you alerts for your upcoming Zoom meetings.")
 print("I will also help you to find your meetings ID and password.\n\n")
-time.sleep(2)
+time.sleep(1.5)
 
 
 def time_diff(a,b):
 	list_a = [int(x) for x in a.split(":")]
 	list_b = [int(x) for x in b.split(":")]
-	
-	if list_a[0] > list_b[0]:
-		if list_a[1] < list_b[1]:
-			list_a[1] += 60
-			list_a[0] -= 1
-		mins = list_a[1] - list_b[1]
-		hours = list_a[0] - list_b[0]
-		hours2mins = hours*60
-		total_mins = mins + hours2mins 
 
-	elif list_b[0] > list_a[0]:
-		if list_b[1] < list_a[1]:
-			list_b[1] += 60
-			list_b[0] -= 1
-		mins = list_b[1] - list_a[1]
-		hours = list_b[0] - list_a[0]
-		hours2mins = hours*60
-		total_mins = -(mins + hours2mins) 
+	value_a = list_a[0]*60 + list_a[1]
+	value_b = list_b[0]*60 + list_b[1]
 
-	else:
-		if list_a[1] > list_b[1]:
-			total_mins = list_a[1] -list_b[1]
-		elif list_b[1] > list_a[1]:
-			total_mins = list_b[1] - list_a[1]
-		else:
-			total_mins = 0
-	return total_mins
+	ans = value_a - value_b
+	return ans
+
 
 def search(timestr):
 	query = []
@@ -66,8 +46,8 @@ while True:
 
 	for line in query:
 		print("Meeting Alert!")
-		if line[-1] > 0:
-			print("Meeting will start in",line[-1],"minutes")
+		if line[-1] < 0:
+			print("Meeting will start in",-(line[-1]),"minutes")
 		else:
 			print("Meeting started",line[-1],"minutes ago")
 		print()
@@ -82,12 +62,12 @@ while True:
 		time.sleep(2)
 	else:
 		close = input("\n\nDo you want to close the program?\na. close\nb. Don't close\n(a/b) -> ").lower()
-		time.sleep(2)
+		time.sleep(1)
 		if close == "a":
 			print("\n\nThanks for taking assist from Zoom Assistant.")
 			time.sleep(1)
 			print("Creator- Ahammad Shawki 8\n")
-			time.sleep(4)
+			time.sleep(3)
 			break
 
 		else:
