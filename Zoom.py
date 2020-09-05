@@ -64,7 +64,7 @@ while True:
                         time.sleep(1)
                         we.open(link)
                 else:
-                        print("\nCopy and Paste Meeting ID and Password.")
+                        print("\nOk, then copy and paste Meeting ID and Password.")
 		
 		time.sleep(2)
 	else:
