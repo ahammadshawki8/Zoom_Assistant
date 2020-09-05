@@ -5,6 +5,7 @@ Zoom_Assistant is a simple Python program which is specially designed for the st
 # Features
 * Automatically search through your timetable
 * Gives meeting alert if you are late or early in the class (range - 5 min)
+* Quickly join you to upcoming Zoom meeting with the help of the meeting link
 * A while loop run in the background searching upcoming meetings
 * loop sleeps for 5 minutes after each iteration (this is good for less memory usage)
 
