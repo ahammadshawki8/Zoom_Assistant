@@ -60,7 +60,7 @@ while True:
 		print("Meeting Link : ",link)
 		open_web = input("\nDo you want to open the meeting link? (yes/no) ->").split().lower()
 		if open_web == "yes":
-                        print("\nOpening meeting link")
+                        print("\nOpening meeting link.....")
                         time.sleep(1)
                         we.open(link)
                 else:
