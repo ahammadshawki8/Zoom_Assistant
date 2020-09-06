@@ -58,7 +58,7 @@ while True:
 		print("Meeting ID   : ",line[1])
 		print("Meeting Pass : ",line[2])
 		print("Meeting Link : ",link)
-		open_web = input("\nDo you want to open the meeting link? (yes/no) ->").split().lower()
+		open_web = input("\nDo you want to open the meeting link?\n(yes/no) -> ").lower()
 		if open_web == "yes":
 			print("\nOpening meeting link.....")
 			time.sleep(1)
