@@ -78,7 +78,7 @@ while True:
 			break
 
 		else:
-			print("\nSleeping from 5 minutes")
+			print("\nSleeping for 5 minutes......\n")
 			time.sleep(60*5)
 
 
