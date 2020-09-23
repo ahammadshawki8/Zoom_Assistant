@@ -13,7 +13,7 @@ If you are not related to rumc, then go to the [master](https://github.com/ahamm
 
 # How to Use
 * Download and Install [Python 3](https://www.python.org/downloads/) in your device.
-* Download [Zoom_Assistant](https://github.com/ahammadshawki8/Zoom_Assistant.git) repository's zip folder in your device.
+* Download [Zoom_Assistant](https://codeload.github.com/ahammadshawki8/Zoom_Assistant/zip/rumc) repository's zip folder in your device.
 * Extract the zip file.
 * Open  **meetings.csv** file and create your zoom meetings timetable.
 * You have to write Time, Meeting ID, Meeting Pass, Meeting Link and Info. 
